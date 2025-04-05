@@ -1,1 +1,25 @@
 # graph-movie-api
+
+Query: Get All Movies
+query {
+getMovies {
+id
+title
+director
+releaseYear
+}
+}
+Query: Get a Movie by ID
+query {
+getMovie(id: "1") {
+title
+director
+}
+}
+Mutation: Add a New Movie
+mutation {
+addMovie(title: "The Matrix", director: "Lana Wachowski", releaseYear: 1999) {
+id
+title
+}
+}
